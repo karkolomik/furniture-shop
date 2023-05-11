@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url("./img/logo-image.jpg") no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+  position: relative;
+}
+
+header .presentation::after {
+  position: absolute;
+  content: "Best furniture for your home!";
+  top: 100px;
+  left: 50px;
+  width: 400px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+header .presentation::before {
+  position: absolute;
+  content: "At lowest price!";
+  top: 200px;
+  left: 50px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .shop-card {
+  width: 30%;
+  margin-bottom: 50px;
+  background: #f5f5f5;
+}
+
+main .shop-card img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
