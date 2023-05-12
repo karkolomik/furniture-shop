@@ -49,7 +49,7 @@ header .shop-cart {
   position: absolute;
   top: 30px;
   right: 0;
-  width: 450px;
+  width: 500px;
   background-color: #fafafa;
   -webkit-box-shadow: 4px 5px 15px -7px #606060;
   box-shadow: 4px 5px 15px -7px #606060;
@@ -71,8 +71,8 @@ header .shop-cart .item img {
 }
 
 header .shop-cart .item h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 header .shop-cart .item p {
@@ -80,9 +80,35 @@ header .shop-cart .item p {
   font-weight: 600;
 }
 
+header .shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  color: #dc3d3d;
+  transform: scale(1.2);
+}
+
 header .shop-cart .empty h2 {
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+header .shop-cart .total-price {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  transition: transform 200ms ease;
+}
+
+header .shop-cart .total-price:hover {
+  transform: scale(1.1);
 }
 
 header .presentation {

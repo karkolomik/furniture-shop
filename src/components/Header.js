@@ -3,11 +3,16 @@ import { FiShoppingCart } from "react-icons/fi";
 import Order from "./Order";
 
 const showOrders = (props) => {
+  let totalPrice = 0;
+  props.orders.forEach(
+    (element) => (totalPrice += Number.parseFloat(element.price))
+  );
   return (
     <div>
       {props.orders.map((el) => (
-        <Order key={el.id} item={el} />
+        <Order key={el.id} item={el} onDelete={props.onDelete} />
       ))}
+      <p className="total-price">Total price: {totalPrice}$</p>
     </div>
   );
 };
@@ -29,7 +34,7 @@ export default function Header(props) {
         <span className="logo">Furnish Me</span>
         <ul className="nav">
           <li>About us</li>
-          <li>Contancs</li>
+          <li>Contacs</li>
           <li>Personal cabinet</li>
         </ul>
         <FiShoppingCart
