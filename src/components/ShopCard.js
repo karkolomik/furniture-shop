@@ -8,7 +8,12 @@ export class ShopCard extends Component {
         <h2>{this.props.item.title}</h2>
         <p>{this.props.item.description}</p>
         <b>{this.props.item.price} $</b>
-        <div className="add-to-cart">Add to cart</div>
+        <div
+          className="add-to-cart"
+          onClick={() => this.props.onAdd(this.props.item)}
+        >
+          Buy
+        </div>
       </div>
     );
   }
