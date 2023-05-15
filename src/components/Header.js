@@ -33,6 +33,9 @@ export default function Header(props) {
       <div>
         <span className="logo">Furnish Me</span>
         <ul className="nav">
+          <span className="orders-count">
+            {props.orders.length > 0 && props.orders.length}
+          </span>
           <li>About us</li>
           <li>Contacs</li>
           <li>Personal cabinet</li>

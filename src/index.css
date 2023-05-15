@@ -119,6 +119,15 @@ header .shop-cart .total-price:hover {
   transform: scale(1.1);
 }
 
+header .orders-count {
+  float: inline-end;
+  z-index: 1001;
+  width: 10px;
+  color: red;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
 header .presentation {
   margin: 50px 0;
   background: url("./img/logo-image.jpg") no-repeat;
@@ -165,6 +174,14 @@ header .cart-icon-button.active {
   transform: scale(1.2);
 }
 
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
 .categories div {
   display: inline-block;
   background: #f2f2f2;
@@ -199,6 +216,7 @@ main .shop-card {
 }
 
 main .shop-card img {
+  cursor: pointer;
   width: 100%;
   border-radius: 10px 10px 0 0;
   transition: transform 500ms ease;

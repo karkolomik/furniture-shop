@@ -6,7 +6,12 @@ export class ShopCards extends Component {
     return (
       <main>
         {this.props.items.map((el) => (
-          <ShopCard key={el.id} item={el} onAdd={this.props.onAdd} />
+          <ShopCard
+            key={el.id}
+            item={el}
+            onAdd={this.props.onAdd}
+            onShowItem={this.props.onShowItem}
+          />
         ))}
       </main>
     );
