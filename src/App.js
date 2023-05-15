@@ -2,12 +2,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import React from "react";
 import ShopCards from "./components/ShopCards";
+import { Categories } from "./components/Categories";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       orders: [],
+      currentItems: [],
       items: [
         {
           id: 1,
@@ -200,17 +202,30 @@ class App extends React.Component {
         },
       ],
     };
+    this.state.currentItems = this.state.items;
     this.addToOrder = this.addToOrder.bind(this);
     this.deleteOrder = this.deleteOrder.bind(this);
+    this.chooseCategory = this.chooseCategory.bind(this);
   }
   render() {
     return (
       <div className="wrapper">
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
-        <ShopCards items={this.state.items} onAdd={this.addToOrder} />
+        <Categories chooseCategory={this.chooseCategory} />
+        <ShopCards items={this.state.currentItems} onAdd={this.addToOrder} />
         <Footer />
       </div>
     );
+  }
+
+  chooseCategory(category) {
+    if (category === "all") {
+      this.setState({ currentItems: this.state.items });
+      return;
+    }
+    this.setState({
+      currentItems: this.state.items.filter((el) => el.category === category),
+    });
   }
 
   addToOrder(item) {
