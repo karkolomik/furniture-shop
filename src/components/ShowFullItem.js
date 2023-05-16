@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class ShowFullItem extends Component {
   render() {
     return (
-      <div className="full-tem">
+      <div className="full-item">
         <div className="shop-card">
           <img
             src={"./img/" + this.props.item.img}

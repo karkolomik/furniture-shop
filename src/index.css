@@ -116,7 +116,7 @@ header .shop-cart .total-price {
 }
 
 header .shop-cart .total-price:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 header .orders-count {
@@ -199,6 +199,26 @@ header .cart-icon-button.active {
   transform: scale(1.1);
 }
 
+.full-item {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.full-item > div {
+  width: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 9px;
+}
+
 main {
   display: flex;
   width: 100%;
@@ -215,28 +235,34 @@ main .shop-card {
   padding-bottom: 20px;
 }
 
-main .shop-card img {
+main .shop-card img,
+.full-item .shop-card img {
   cursor: pointer;
   width: 100%;
   border-radius: 10px 10px 0 0;
   transition: transform 500ms ease;
 }
-main .shop-card img:hover {
+main .shop-card img:hover,
+.full-item .shop-card img:hover {
   transform: scale(1.05);
 }
 
 main h2,
-p {
+.full-item h2,
+main p,
+.full-item p {
   margin: 10px 20px;
   color: #333;
 }
 
-main b {
+main b,
+.full-item b {
   color: #5fa36a;
   margin-left: 25px;
 }
 
-main .add-to-cart {
+main .add-to-cart,
+.full-item .add-to-cart {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -251,7 +277,8 @@ main .add-to-cart {
   font-weight: 600;
 }
 
-main .add-to-cart:hover {
+main .add-to-cart:hover,
+.full-item .add-to-cart:hover {
   transition: transform 500ms ease;
   transform: scale(1.05) translateY(-5px);
 }
