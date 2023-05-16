@@ -37,7 +37,7 @@ export default function Header(props) {
             {props.orders.length > 0 && props.orders.length}
           </span>
           <li>About us</li>
-          <li>Contacs</li>
+          <li>Contacts</li>
           <li>Personal cabinet</li>
         </ul>
         <FiShoppingCart
