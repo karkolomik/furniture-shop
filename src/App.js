@@ -149,8 +149,8 @@ class App extends React.Component {
         },
         {
           id: 16,
-          title: "Epic Table",
-          img: "Epic Table.jpg",
+          title: "Epic table",
+          img: "Epic table.jpg",
           description:
             "Epic is a collection of tables signed by the GamFratesi designers team for the Gubi brand",
           category: "coffee table",
