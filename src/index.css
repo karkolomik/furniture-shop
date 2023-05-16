@@ -109,10 +109,15 @@ header .shop-cart .empty h2 {
 
 header .shop-cart .total-price {
   float: left;
-  width: 100%;
+  text-align: center;
+  width: 30%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   transition: transform 200ms ease;
+  background: #ca5252;
+  border-radius: 10px;
+  color: #fafafa;
+  margin-bottom: 10px;
 }
 
 header .shop-cart .total-price:hover {
