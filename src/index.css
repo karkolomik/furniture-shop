@@ -211,9 +211,9 @@ header .cart-icon-button.active {
 }
 
 .full-item > div {
-  width: 600px;
+  width: 500px;
   position: relative;
-  margin: 10% auto;
+  margin: 2% auto;
   padding: 40px 30px;
   background: #fff;
   border-radius: 9px;
