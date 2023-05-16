@@ -140,8 +140,8 @@ class App extends React.Component {
         },
         {
           id: 15,
-          title: "Palissade Cone Table",
-          img: "Palissade Cone Table.jpg",
+          title: "Palissade cone table",
+          img: "Palissade cone table.jpg",
           description:
             "Palissade cone table is a coffee table for outdoor signed by Ronan and Erwan Bouroullec",
           category: "coffee table",
@@ -149,8 +149,8 @@ class App extends React.Component {
         },
         {
           id: 16,
-          title: "Epic Table",
-          img: "Epic Table.jpg",
+          title: "Epic table",
+          img: "Epic table.jpg",
           description:
             "Epic is a collection of tables signed by the GamFratesi designers team for the Gubi brand",
           category: "coffee table",
